@@ -33,36 +33,24 @@
           <small><a href="https://treyhunner.com/" rel="author">Trey Hunner</a> / <a href="https://twitter.com/treyhunner">@treyhunner</a></small>
           </p>
           <aside class="notes" data-markdown>
-            - Alright.  Let's get started.
-            - So my name is Trey
+            - My name is Trey
             - And I help developers level-up their Python skills
-            - I do that in two ways
           </aside>
         </section>
 
         <section>
-          <div class="aboutme-card">
+          <div class="aboutme-card fragment">
             <a href="http://pythonmorsels.com"><img src="morsels-logo.svg" class="no-style aboutme-logos" alt="Python Morsels"></a>
           </div>
-          <div class="aboutme-card">
+          <div class="aboutme-card fragment">
             <a href="http://truthful.technology"><img src="truthful-technology-logo.svg" class="no-style aboutme-logos" alt="Truthful Technology"></a>
           </div>
           <aside class="notes" data-markdown>
-            - I run a weekly Python skill-building service called Python Morsels
-            - I also do on-site trainings to help teams level-up their Python skills
+            - I run Python Morsels **(click)**, which is a weekly exercise service that helps developers deepen their Python skills in ways that day-to-day coding doesn't
+            - I also run a training company, Truthful Technology **(click)**, which gives the me opportunity to help ye clients level-up their team's Python skills through hands-on training sessions
             - I'm going to be talking about some of the things I've learned while teaching Python to teams
-            - I'll also be drawing heavily from my experience organizing and coaching at programming workshops
-          </aside>
-        </section>
-
-        <section>
-          <img src="djangogirls-logo.svg" class="no-style" alt="Django Girls">
-          <aside class="notes" data-markdown>
-            - ...Including Django Girls workshops
-            - ...
-            - I've coached at at a couple Django Girls events and I've acted as a coach mentor and meta-coach for a few more Django Girls events
-            - When it comes to coaching, mentoring, and teaching, I often don't feel like I know what I'm doing (I don't have formal teaching credentials)
-            - but I *have* learned a few things that I feel qualified enough to share
+            - I'll also be drawing on my experience organizing meetups and coaching at volunteer-run Python and Django workshops over the years
+            - **Disclaimer**: I don't have a background in teaching teachers, *but* I have learned a few things over the years about teaching, coaching, and mentoring that I feel qualified enough to share...
           </aside>
         </section>
 
@@ -73,11 +61,10 @@
         <section>
           <h2>Show of hands</h2>
           <aside class="notes" data-markdown>
-            - Who has coached at Django Girls or another programming workshop in the past?
-            - ... Keep your hands up
-            - Who has mentored a new hire at work?
-            - I hope those of you raised your hands will find this talk useful
-            - For those who didn't raise your hands, you will probably find yourself in a similar situation eventually
+            - I know I can't see most of your hands, but I'm going to ask you to raise your hand even though I can't see you
+            - Who has mentored a new hire or a new team member?
+            - I hope those of you raised your hands will find this talk useful the next time you find yourself mentoring a new teammate
+            - For those who didn't raise your hands, you will probably one day find yourself helping a colleague with their code... at that point I hope you'll reflect on what we're about to discuss
           </aside>
         </section>
 
@@ -92,16 +79,16 @@
             <li class="fragment">Being helpful in the moment <span class="fragment"> (coaching)</span></li>
           </ul>
           <aside class="notes" data-markdown>
-            - So we're going to talk about a specific scenario **(click)**: you're **sitting next to someone** and **they need your help** with *their* code
+            - We're going to talk about a specific scenario **(click)**: you're **sitting next to someone** and **they need your help** with *their* code
             - They don't just want you to *fix* their code **(click)**, they want your help growing their coding skills **(click)**
             - They *might* need your help again later, but this relationship might be temporary **(click)**: we're focused on the learning moment we have right now
             - What I won't be talking about during this talk, is *Python* **(click)**
             - I will talk a little bit about **(click)** teaching itself... but not very much **(click)**
-            - And, while this talk is called meaningful mentoring moments, ... I'm not really going to talk about mentoring **(click)**, at least not the way other folks like Kim Crayton use that term
-            - This *might* be a big picture, long term mentoring relationship: but we're only going to focus on helping **in-the-moment we have right now** **(click)**
-            - So you can think of this more like "coaching" **(click)** (which is what Django Girls often calls this)
+            - And, I've called my talk "meaningful mentoring moments", ... I'm not *really* going to talk about mentoring **(click)**, at least not the way that word "mentoring" is *usually* used
+            - Mentoring is *often* be a big picture, long term mentoring relationship: but my advice here will be focused *primarily* on helping **in-the-moment we have right now** **(click)**
+            - So instead of "mentoring", you can think of this more like "coaching" **(click)**
             - ...
-            - There are three big topics I'd like to discuss.
+            - There are three big topics we're going to discuss.
             - ...
             - The first one...
           </aside>
@@ -122,7 +109,8 @@
       <section>
         <h2>You're not the star of the show</h2>
         <aside class="notes" data-markdown>
-          - You're not the star of the show: you're a side character
+          - You're not the star of the show
+          - In the show of coaching a colleague, **you're a humble side character**
           - ...
           - Your job is **to support and guide your learner**, but they *shouldn't* be *dependent* upon you
           - This process is **centered around your learner**, not you
@@ -135,19 +123,21 @@
         <h2><span class="fragment" data-fragment-index=1>Teach</span><span class="fragment" data-fragment-index=3>, don't </span><span class="fragment" data-fragment-index=2>tell</span></h2>
         <h3 class="fragment">"You learn by doing"</h3>
         <aside class="notes" data-markdown>
-          - So ... ...
-          - I often live code when I teach
+          - When I hold a Python training session, whether at a conference or for one of my clients
+          - I almost always *live code* as I teach
           - And I'm always tempted to *write code out* and then *explain* it, but that's not teaching **(click)**... that's telling.  **(click)**
-          - *teach, don't tell*  **(click)**
+          - I don't want you to tell; I want you *to teach*  **(click)**
           - You can do that by encouraging **active recall**: that's the act of retrieving information from your head
           - ...
           - We **don't learn** by trying to *put information into our heads*
           - We *learn* by attempting to retrieve information *from* our heads
           - *(pause)*
-          - Who has heard the expression "you learn by doing"? **(click)**
-          - *(pause)* It's true. You don't learn by consuming information, you learn by retrieving it: the doing
+          - I'm sure you've heard the expression "you learn by doing" **(click)**
+          - *(pause)* It's true.
+          - The reason it's true is that **doing** requires the act of **retrieving information from our heads**
+          - You don't learn by consuming information, you learn by retrieving it: it's the doing that makes the learning stick
           - ...
-          - This is tricky because *the doing* is **intimidating** when you don't know what you're doing.
+          - This is tricky because *doing* is **intimidating** when you don't yet *know* what you're doing.
           - You can help your learner by **encouraging them**...
         </aside>
       </section>
@@ -155,21 +145,26 @@
       <!-- 1.5 minute -->
       <section>
         <h2><span class="fragment bold">Encourage</span> making mistakes</h2>
+        <h2 class="fragment">Encourage experimenting</h2>
         <ul>
           <li class="fragment">"I don't know, give it a try."</li>
           <li class="fragment">"What have you tried so far?"</li>
         </ul>
         <aside class="notes" data-markdown>
           - To make mistakes
-          - Making mistakes involves a *process* of considering what *might be* a correct answer and *what isn't*... and then *trying it out*
+          - Making mistakes involves a *process* of *considering possible solutions*...
+          - What *might be* a correct answer and which possible answer seems like the next best guess; and then **try it out**
           - The process of trying, failing, and trying again is a *learning* process
-          - I don't just want you to just carve out a space where making mistakes is okay, I actually want you to actively *encourage* **(click)** making mistakes
-          - When doing this you could say things like ...
+          - To be clear I don't just want you to just carve out a space where making mistakes is okay
+          - I want you to actively *encourage* **(click)** making mistakes
+          - **mistakes are magical** because mistakes usually involve *experimenting* **(click)**
+          - We **take a guess** and then we **try it out** to validate, or *more often* to **invalidate**, our guess because **most guesses** are incorrect and that's just part of learning
+          - To encourage experimenting you could say things like ...
             - **(click)** "I don't know, give it a *try*" (which is code for "let's make a mistake together")
-            - Or **(click)** "what have you tried so far?" (which means "what mistakes have you made so made so far")
-          - So I want you to actively encourage your learners to make mistakes
+            - Or **(click)** "what have you tried so far?" (which means "what mistakes have you made up to this point")
           - ...
-          - So after your learners have made mistakes and they've found themselves stuck, I want you...
+          - After your learner has made a mistake (maybe you've even made a mistake together), at some point they will (inevitably) find themselves stuck
+          - At that point I want you...
         </aside>
       </section>
 
@@ -179,14 +174,21 @@
         <h2 class="fragment"><span class="fragment">Teach,</span> don't tell</h2>
         <h3 class="fragment"><em>Make the answers sticky</em></h3>
         <aside class="notes" data-markdown>
-          - To not answer any questions... I'm kidding.  You need to help them, that's sort of your job. **(click)** 
-          - But I want you to be *careful* when answering questions
+          - To not answer any questions... *(pause)*
+          - ...I'm kidding, you actually do need to answer questions **(click)**
+          - Answering questions is an important part of coaching
+          - But I want you to **be careful** when answering questions
           - It's going to be hard to remember that **you shouldn't be telling**, **(click)** you should be teaching **(click)**
           - So when you answer questions, you want your answers to be *sticky* **(click)**
-          - Make an analogy, even if it's a bad one.  If it's memorable, it's good enough.
+          - For example you could make an analogy
+          - Analogies can be very sticky, especially bad analogies
+          - The **more memorable** it is, the better: memorable moments are sticky moments
           - If you thought up a dance that demonstrates the way dictionaries work, do it.  I don't know what it would look like, but it would probably be memorable.
           - Make your answers **sticky**
-          - And if you can, it's nice to avoid being the source of information.  Instead of answering questions directly, point your learner in the right direction...
+          . ...
+          - And when possible, while giving answers, it's nice to avoid being the source of information.
+          - ... to not give an answer directly but to go on a learning adventure together...
+          - You can do that by pointing your learner in the right direction by...
         </aside>
       </section>
 
@@ -195,13 +197,15 @@
         <h2><span class="fragment strike" data-fragment-index=1>Delegate to the documentation</span></h2>
         <h2><span class="fragment" data-fragment-index=1>Delegate to Google</span></h2>
         <aside class="notes" data-markdown>
-          - By looking things up in the documentation
-          - Or more realistically, in Google **(click)**
-          - If you're sitting next to someone who you're coaching and they ask "why am I getting this error message?" instead of saying "ah ha, I know the answer", say "let's look it up"
+          - delegating to the documentation
+          - Or more realistically, delegating to Google **(click)**
+          - If you're on a call with a coworker and they ask "why am I getting this error message?" instead of saying "ah ha, I know the answer", you could say "let's look it up"
+          - You may *know* the answer, but looking up the answer encourages your learner to **form a habit of delegating to helpful resources**
           - *You* are a resource for your learner, but **you're not their only resource**
           - You want to delegate to other sources of information that are more accessible at 2am... or over the weekend
+          - I don't know about you but while I love answering Python questions, I'd prefer not to answer them in the middle of the night
           - ...
-          - So making mistakes together is important and looking things up together is important...
+          - Making mistakes together is important and looking things up together is important...
           - But sometimes you really just need...
         </aside>
       </section>
@@ -210,7 +214,7 @@
       <section>
         <aside class="notes" data-markdown>
           - to talk through a problem
-          - When you're walking through a problem together, I want you to take inspiration from a friend of mine
+          - When you're walking through a problem together, take some inspiration from a friend of mine
           - ...
         </aside>
       </section>
@@ -243,12 +247,12 @@
       <section data-background-image="left2-ducks.jpg">
         <aside class="notes" data-markdown>
           - ...
-          - Who has heard of rubber duck debugging?
+          - Who has heard of rubber duck debugging before?
         </aside>
       </section>
 
       <section>
-        <h2>Rubber duck debugging</h2>
+        <h2>Rubber duck debugging<span class="fragment"> (ish)</span></h2>
         <ul>
           <li class="fragment">"My code doesn't work"</li>
           <li class="fragment">"What do you expect it to do?"</li>
@@ -256,12 +260,14 @@
           <li class="fragment">"What approach are you taking?"</li>
         </ul>
         <aside class="notes" data-markdown>
-          - With rubber duck debugging, when you get stuck on a coding problem you talk to you rubber duck
-          - Your rubber duck doesn't talk back to you, it just listens
-          - So the duck doesn't answer any questions, but talking to the duck helps you elaborate on your problem which can help you uncover ideas you hadn't thought of yet
-          - I want you to do a lot more listening to your learner, than talking
-          - So if your learner says **(click)** "my code doesn't work" you could ask **(click)** what they expect it to do and**(click)**  what it does instead and then follow that up by asking them **(click)** to explain the approach they're taking
-          - Elaboration is a great way to learn
+          - Rubber duck debugging is the idea that when you get stuck on a coding problem you talk to a rubber duck
+          - Your rubber duck doesn't talk back to you (at least *hopefully* it doesn't talk back)
+          - Your rubber duck isn't supposed to talk back; it just listens
+          - Your duck doesn't answer any questions, but talking to the duck helps you **elaborate** on your problem which can help you **uncover** ideas you hadn't thought of yet
+          - I don't want you to be completely *silent* like a rubber duck, but I want you to do **a lot more listening** than talking **(click)**
+          - So if your learner says **(click)** "my code doesn't work" you could ask **(click)** what they expect it to do and**(click)**  what it does instead and then follow that up by asking them **(click)** to explain the approach they're taking... to **talk through** the problem with you
+          - For you that means less talking and more listening
+          - Elaboration is a great way to learn and you can help with elaboration by **acting a bit like a rubber duck**
         </aside>
       </section>
 
@@ -271,19 +277,22 @@
           <li class="fragment">Teach, don't tell</li>
           <li class="fragment">Encourage making mistakes</li>
           <li class="fragment">Be a rubber duck</li>
-          <li class="fragment">Delegate to <strike>the docs</strike> Google</li>
+          <li class="fragment">Delegate to the docs (or Google)</li>
           <li class="fragment">You're not the star of the show</li>
         </ul>
         <aside class="notes" data-markdown>
-          - So teach, don't tell **(click)**
+          - Being a learning ally means
+          - teach, don't tell **(click)**
           - Actively **encourage** making mistakes **(click)**
           - And try to act sort of like a Socratic rubber duck: listen and ask questions **(click)**
           - Also delegate to other sources of information **(click)**, because the spotlight shouldn't be on you
-          - You're not the star of the show.  **(click)** Your learner is.
+          - After all, you're not the star of the show.  **(click)** Your learner is.
           - ...
-          - So being a learning ally is important, but learning isn't just **an intellectual pursuit**.  This is an **emotional experience** (for your learner and maybe for you).
-          - Who remembers learning a new technology and not having any idea what you were doing?
-          - Your learner is **living** that moment.  They're going to be displaying their *lack of knowledge* to you, over &amp; over.
+          - So being a learning ally is important, but learning isn't just **an intellectual pursuit**.  It's also an **emotional experience** (for your learner and maybe also for you).
+          - Who remembers learning a new technology and not having **any idea** what you were doing?
+          - Your learner may be **living** that moment, maybe not all the time but probably *some* of the time
+          - Regardless of how secure or insecure your they feel about what they know and don't know...
+          - They're going to be displaying *a lack of knowledge* to **you**, over &amp; over (if you're doing your job right)
           - ...They're probably going to feel pretty vulnerable
           - So it's very important...
         </aside>
@@ -297,9 +306,12 @@
         <h1>Build Trust</h1>
         <aside class="notes" data-markdown>
           - That you build trust with your learner
-          - Your learner needs to feel comfortable being vulnerable with you
+          - Whenever you're helping someone learn something that *you* know better than they do, you'll be be *perceived* as an **authority figure**
+          - And we typically experience *authority figures* as *intimidating*
+          - You need to find a way to **overcome that intimidation factor**
+          - Your learner needs to feel comfortable being **vulnerable** with you
           - They need to trust you
-          - One *big* way you can build trust, is to find a way to make **yourself** vulnerable
+          - One *big* way you can build trust, is to find a way to make **yourself** more vulnerable
         </aside>
       </section>
 
@@ -312,13 +324,17 @@
           <li class="fragment">Saying "I don't know"</li>
         </ul>
         <aside class="notes" data-markdown>
-          - There are a lot of ways to be a bit more vulnerable
-          - For example, I make bad jokes **(click)**.  They're not usually not very funny and that makes me a little bit vulnerable.
-          - I also make mistakes **(click)**, sometimes on purpose and most of the time on accident.  But I don't ever "I did that on purpose to test you".  I want my learners to *feel* my fallibility.
+          - There are a lot of ways to make yourself a bit more vulnerable
+          - For example, when I'm teaching Python...
+          - I often make bad jokes **(click)**.  They're not usually not very funny, sometimes they've even a bit absurd
+          - That breaks up tension a bit, but it also makes *me* a little bit more vulnerable
+          - I also make mistakes **(click)**, sometimes on purpose... most of the time on accident, partly because I'm live coding and you can't live code *without* making mistakes
+          - But when I make a mistake (even if it's on purpose) I never ever say "I did that on purpose to test you"
+          - I want my learners to *feel* my fallibility: it helps them *more* than telling them that I made a mistake to test them
           - Another big way to be vulnerable is by saying *"I. don't. know"* **(click)**
             - I don't know, but **let's try it out**
             - Or... I'm not sure, **let's look it up**
-          - Admitting you don't know is very important for building trust
+          - Admitting you don't know is important for building trust
           - ...
           - These are just 3 ways to be more vulnerable
           - And vulnerability is a big way to build trust... but it's not the only way
@@ -337,14 +353,17 @@
         </ol>
         <aside class="notes" data-markdown>
           - Here are 4 ways to ask almost the same thing...
-          - **4 Clicks**
-          - Which of these is the most welcoming?
-          - I would say number 4.
-          - Those first and second ones sound kind of like a **pop quiz**
-          - Active recall is how we learn: so you *do* want to quiz your learner, but you don't want them to **feel like they're being quizzed**
-          - You want to invite your learners *to guess* and *to make mistakes* by using welcoming language, not confident or assertive language
-          - So I want you to think less about what you're *saying* and more about *what might be heard*
-          - And I want you to be **encouraging**
+          - **4 Clicks, slowly**
+          - Which of these is the most **welcoming**? *(pause)*
+          - I would say probably number 4: it's long and awkward but it's most clearly in the realm of *guessing* and *experimenting* rather than *knowing*
+          - Those first and second questions sound a bit like a **pop quiz**
+          - Active recall is how we learn: so you *do* want to quiz your learner, but you don't need them to **feel like they're being quizzed**
+          - There's no need to increase the intimidation factor by adding the feeling of being tested
+          - You want to invite your learners *to guess* and *to make mistakes* by using welcoming and inviting language, not confident or assertive language
+          - *Confident* and *assertive* language has its place, but you'll do much better with *welcome* and *inviting* language when you're trying to encourage guessing
+          - ...
+          - I want you to think a bit less about what you're *saying* and a bit more about how what you're saying *might be heard*
+          - To that end, I want you to be **encouraging**
         </aside>
       </section>
 
@@ -357,16 +376,17 @@
           <li class="fragment">"Oh it's easy, you just... "</li>
         </ul>
         <aside class="notes" data-markdown>
-          - There are a lot of ways you can alienate you learner, in big ways and in small ways through the words you use
+          - There are a lot of ways you can alienate you learner (in big ways and in small ways) through the words you use
+          - Here are some problematic phrases I've often caught myself using...
           - "So obviously" **(click)**: many things are **not obvious** when you're learning
-          - "Of course" **(click)**: when you're new to something, there aren't many "of course" situations
+          - If you're *talking about* something, it's *not* completely obvious
+          - "Of course" **(click)**: this one's a bit more subtle... when you're new to something, there often aren't very many "of course" situations because (again) many things aren't yet obvious
           - "It's easy, you just" **(click)**: it's easy for you, it's not easy if you don't know it yet
-          - What's in your head as a coach, is not in your learner's head
-          - What's easy for you, is not easy for your learner.  It's hard.
-          - Your learner doesn't yet know the same things you do, because you're further along in the process of learning
+          - What's in your head, may not be in your learner's head
+          - Your learner doesn't yet know the same things you do, because you're probably further along in your learning process
           - ... *(breathe)*
           - ...
-          - This next slide is the scariest one I have
+          - This next slide is the scariest one because it could be a big barrier in your effectiveness as a mentor or a coach
         </aside>
       </section>
 
@@ -377,10 +397,11 @@
           - If you don't believe in your learner's ability to improve, they are less likely to improve their skills
           - Who has heard of the growth mindset?
           - If you adopt a growth mindset you believe that through directed effort, you can and you will improve your skills: that your skills aren't fixed but are expandable
+          - The interesting thing about the growth mindset, is that...
           - You're more likely to learn if you adopt a growth mindset: you're more likely to grow your skills if you believe in your ability to do so
-          - It's hard to believe in yourself if the person who's coaching you doesn't believe in you
+          - And it's hard to believe in yourself if the person who's coaching you doesn't believe in you
           - Your learner is starting from a *baseline of understanding*: you can't judge that baseline, you just **have to believe** that they'll build up from where they're at right now
-          - And you need to give your learner the impression, explicitly or implicitly, that you believe in their ability to grow
+          - And you need to give your learner the impression, explicitly or implicitly, that you believe in their ability to grow their own skills
         </aside>
       </section>
 
@@ -393,16 +414,26 @@
           <li class="fragment">Believe in your learners</li>
         </ul>
         <aside class="notes" data-markdown>
-          - So building trust involves
+          - Building trust involves
             - Being vulnerable **(click)**
-            - Speaking deliberately **(click)**
-            - Which involves making sure you're being encouraging and not alienating **(click)**
+            - Possibly by telling bad jokes
+            - And speaking deliberately **(click)**
+            - Which involves making sure you're being encouraging and not alienating **(click)** the person you're working with
             - And believing in the ability your learner has, to learn. **(click)**  Believing in their potential and their capacity to grow themselves.
           - ...
-          - So to recap, you want to be an learning ally, not an expert
-          - You also want to be want to build trust so your learner will be comfortable with you
+          - So to recap...
+        </aside>
+      </section>
+
+      <section data-transition="fade" data-background="#ffffff">
+        <h1 class="fragment">Be a Learning Ally</h1>
+        <h1 class="fragment">Build Trust</h1>
+        <h1 class="fragment">???</h1>
+        <aside class="notes" data-markdown>
+          - you want to be an learning ally **(click)**, not an expert
+          - You also want to be want to build trust **(click)** so your learner will be comfortable with you
           - ...
-          - The last thing I'd like to talk about is a way for you to improve your mentoring abilities by learning from yourself as you go
+          - The last thing I'd like to talk about **(click)** is a way for you to improve your mentoring abilities by learning from yourself as you go
           - The last thing I'd like you to do...
         </aside>
       </section>
@@ -437,27 +468,35 @@
           - Let's say your learner says: "my code doesn't work"
           - They show you the code, and you see 4 things:
             - **(click)** A function that's improperly named
-            - **(click)** Code that's a little ugly, but it works
+            - **(click)** Code that's a little bit ugly, but it works
             - **(click)** Something that seems like a logical error: a misunderstanding of the problem you're solving
             - **(click)** And a syntax error: something that stops the code from running at all
-          - Which one of these do you focus on?
-          - **Trick question**.  The answer is actually whichever one is currently most important to your learner
-          - Unless they're asking you about code style, that's not the most pressing issue of these four **(*elaborate*)** **(click)**
-          - The most important *right now* might be the one Python is *complaining* about: the syntax error **(click)**
-          - You don't want to distract your learner: so just focus on *the one thing* that's important *right now*.  And then stop.  *The rest* can come later.
+          - *(pause)* ...
+          - Which one of these do you focus on first? What do you think?
+          - ...
+          - **This actually is a trick question**: it's a trick question because you want to focus on whatever is currently *hanging up* your learner
+          - Code style is *probably* not hanging up your learner because if they have these 4 problems, they're probably not asking about code style **(click)**
+          - Code style is often a topic that you can leave for another day: talk about it at some point but if you have these 4 problems code style is not your top concern
+          - The thing your learner is probably concerned about is **that syntax error**: **(click)** your learner will probably notice that first because Python will notice that first
+          - The most important *right now* is the one thing you should focus on next
+          - What that *one thing* is depends on what your learner is most concerned about right now
+          - You don't want to distract: so just focus on *the one thing* that's important *right now*.  And then stop.
+          - *(pause)*
+          - *The rest* can come later.
         </aside>
       </section>
 
       <section data-background-color="#444" data-background-image="reflection-cropped.jpg">
         <h2 class="fragment">Reflect<br><br><br><br><br><br><br></h2>
         <aside class="notes" data-markdown>
-          - You're going to be better at knowing what to do next if you can *empathize* with what your learner might be feeling
-          - Slow down, and reflect **(click)**
+          - You're going to be better at knowing what to focus on next if you can *empathize* with your learner and imagine what your *they* might be feeling
+          - To accomplish that you can slow down, and reflect **(click)**
           - When you speak, *question* **what you're saying**, **why you're saying it**, and how it might be heard
           - ...
           . ...
-          - Reflecting on your actions and words *in-the-moment* **can** be distracting... I don't want you to get hung up on this
-          - But do try to make sure that you carve out some time every once in a while to *marinate in the moment*
+          - Reflecting on your actions and words *in-the-moment* **can** be distracting... I don't want you to get hung up on constantly analyzing your actions in the moment
+          - But you should try to find a way to carve out some space for yourself every once in a while to *marinate in the moment you're in*
+          - Think about what it is you're doing, what you've just done, and where you might be going next
           - *Reflection* is a very *important* part of learning, and *you* are also learning
         </aside>
       </section>
@@ -469,9 +508,11 @@
           - There are *a lot* of folks who write about learning best practices the same way developers write about programming best practices
           - These best practices will be useful for you because *you* are learning
           - But it'll also be useful to share these concepts with your learner
-            - Talk about the growth mindset
-            - And talk about the fact that you learn by retrieving information from your head, not by putting it into your head
-          - This discussion is a *moment* for you, but *it's a lifetime* for your learner
+          - For example you can...
+            - Talk about the growth mindset: that is the fact that believing you can grow your skills actually *helps you* grow your skills
+            - And you can talk about the fact that **you don't learn by putting information in your head**: you learn by **retrieving information from your head**. The information retrieval process is where learning actually happens
+          - A discussion about learning might be a *moment* for you, but *a lifetime* for your learner
+          - Improving your your learner's ability to learn will also impact their on-going programming career as well
         </aside>
       </section>
 
@@ -480,18 +521,23 @@
         <h2 class="fragment" data-fragment-index=1>Adopt a growth mindset</h2>
         <aside class="notes" data-markdown>
           - "Fake it until you make it"
-          - I don't really like this phrase: it sounds maybe insincere or demeaning somehow.
+          - I don't really like this phrase: it sounds a bit insincere or maybe demeaning
+          - The connotation seems a bit off to me...
           - But there is some truth to this idea
           - Faking it until you make it, is kind of related to adopting a growth mindset **(click)**
-          - If you *slow yourself down* and think "if I were a *really good* mentor, what would I do", you're fake it
+          - If you *slow yourself down* and think "if I were a *really good* mentor, what would I be doing right now", **you're faking it**
           - You're acting deliberately: you're pretending
-          - But you're also practicing: which means you're learning
-          - So you won't be pretending, because it'll be intuitive
-          - *Faking it* is a way to grow yourself
+          - But you're also *practicing*: which means you're learning
+          - So eventually you you won't need to fake it because it'll be intuitive
+          - *Faking it* is just another way of talking about the growth mindset
           - ...
           - Many mental abilities are learned skills
-          - **Thoughfulness**, **empathy**, **friendliness**: all of those are *learned* skills.
+          - **Thoughfulness** is a learned skill
+          - **empathy** is a learned skill
+          - **friendliness** is something you can learn
+          - I am a friendlier person than I used to be. I've been faking it for years and at some point I internalized a bit of friendliness.
           - Lots of things seem like they're inherent parts of our personality: but many things can be changed if you put in the right kind of effort
+          - If you identify a trait in someone else that you like, steal it.  It's yours.  You can fake it until one day you also have that trait.
         </aside>
       </section>
 
@@ -504,12 +550,13 @@
           <li class="fragment">Adopt a growth mindset</li>
         </ul>
         <aside class="notes" data-markdown>
-          - So I want you to slow yourself down: slow your thinking, your speaking, and your acting
-          - I want you to take things one step at a time: don't distract yourself or your learner by jumping ahead of the **one thing** that's important right now
-          - And I want you to learn a bit about learning itself so that you can help your learners move toward their goals more deliberately
-          - I also want you to adopt a growth mindset, not just for your learner's sake but for your sake
-          - If you identify a trait in someone else that you like, steal it.  It's yours.  You can fake it until one day you have that trait also.
-          - Whatever being a good mentor means to you, you *can* move in that direction if you **put your mind to it**
+          - Slow yourself down
+          - Slow down your thinking, your speaking, and your actions
+          - Take things one step at a time: don't distract yourself or your learner by jumping ahead of the **one thing** that's important right now
+          - And learn a bit about learning itself so that you can help your learners move toward their goals more deliberately
+          - Also, be sure to adopt a growth mindset, for your learner's sake but also for your sake
+          - You can grow and improve in your mentoring abilities just as your learner can grow and improve in their Python abilities
+          - Whatever being a good mentor means to you, you *can* move in that direction if you **put in the right effort to do so**
         </aside>
       </section>
 
@@ -517,9 +564,10 @@
 
       <section data-background-image="collage.png" data-transition="fade" data-background-transition="zoom" data-transition-speed="fast">
         <aside class="notes" data-markdown>
-          - ...
           - I've pretty much only scratched the surface on this topic
-          - If you'd like to dive deeper into coaching, teaching, and related topics, I have URL with resources I recommend that I'll share on my last slide
+          - My teaching style is heavily influenced by books, talks, and articles from many other individuals
+          - ...
+          - I'll share a URL in a moment with links to resources I recommend for diving a little deeper into coaching, teaching, mentoring, and related topics
         </aside>
       </section>
 
@@ -532,26 +580,34 @@
             - **(click)** Be a learning ally, not an expert
             - **(click)** Build trust with your learner so they'll be more comfortable being vulnerable with you
             - **(click)** And slow down to reflect on what you're doing and why you're doing it
-          - Thank you.
         </aside>
       </section>
 
       <section style="text-align: left;" data-background="#663399" data-background-transition="slide" data-transition="slide">
-        <h2 style="margin-top: 1.5em;">Recommended resources at</h2>
-        <h2><a href="http://trey.io/pycascades2019">http://trey.io/pycascades2019</a></h2>
-        <div style="margin-top: 2.5em;">
+        <h3 style="margin-top: 1em;">Visit 🔗 <a href="https://trey.io/BlackRock22">https://trey.io/BlackRock22</a></h3>
+        <h4><nobr>For <strong>recommended resources</strong></nobr> <nobr>and <strong>Python tips</strong></nobr></h4>
+        <div style="margin-top: 2.5em; margin-bottom: 2em;">
+          <p>
+          Ask me questions about:<br><strong>Python training</strong>, teaching, <strong>learning Python</strong>, anything else
+          </p>
+        </div>
+        <div>
           <p style="float: left; margin-right: 2em;">
             <strong>Trey Hunner</strong><br>
-            <small>Python Team Trainer</small>
+            <small>Python Team Trainer<br>
+              <strong>trey@PythonMorsels.com</strong></small>
           </p>
           <p style="float: left;">
           <a href="http://truthful.technology"><img src="logo.svg" class="no-style logo"></a>
           <a href="http://pythonmorsels.com"><img src="python-morsels-logo.svg" class="no-style logo"></a>
           </p>
+          <div style="clear: both;"></div>
         </div>
         <aside class="notes" data-markdown>
           - ...
-          - You can visit that URL, trey.io/pycascades2019, for more on this topic
+          - You can visit that URL, trey.io/BlackRock22, for more resources
+          - And you can join my Python newsletter from there as well
+          - Thank you
         </aside>
       </section>
 
